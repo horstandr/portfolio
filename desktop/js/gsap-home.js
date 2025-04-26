@@ -25,4 +25,6 @@ if (localStorage.getItem('rbg') == true || localStorage.getItem('bgcolor')) {
 // Main page loader
 tl.from(".illustration", {duration: 0.5, stagger: 0.2, y: -500, ease:"power2.inOut"})
   .from(".menu-btn", {duration: 0.5, x: -1000, ease: "power2.inOut"})
-  .from(".header-text", {duration:0.5,x:1200, ease: "power2.inOut"});
+  .from(".header-text", {duration:0.5,x:1200, ease: "power2.inOut"})
+  .to(".menu-btn>p", {duration:0.5,opacity:1,delay:5})
+  .to(".menu-btn>p", {duration:0.5,opacity:0,delay:3});

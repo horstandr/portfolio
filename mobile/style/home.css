@@ -69,3 +69,16 @@ body {
     height: 25vw;
     aspect-ratio: 1 / 1;
 }
+
+/* Menu button info message */
+.menu-btn > p{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 80pt;
+    z-index: 99999;
+    mix-blend-mode: difference;
+}
