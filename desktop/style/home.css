@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    font-family: "Josefin Sans", serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    color: var(--primary);
+}
+
+body {
+    background-color: var(--secundary);
+}
+
+.loader-screen {
+    background-color: var(--secundary);
+    z-index: 500;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader-screen * {
+    -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.loader-title {
+    font-size: 300pt;
+    font-weight: 300;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+h1 {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.content {
+    display: grid;
+    transition: all 0.5s ease;
+    grid-template-columns: 1fr;
+    row-gap: 0px;
+    grid-template-rows: 1fr 1fr;
+}
+
+.illustrations {
+    height: 45vh;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.illus-img, .illustration {
+    height: 45vh;
+    aspect-ratio: 1 / 1;
+}
+
+.main {
+    height: 45vh;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.header-text {
+    font-size: 35vh;
+    font-weight: 300;
+}
+
+.menu-btn {
+    height: 40vh;
+    width: 60vh;
+}
+
+.menu-btn > span {
+    background: var(--secundary);
+}

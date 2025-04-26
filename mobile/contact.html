@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/menu.css">
+    <link rel="stylesheet" href="style/contact.css">
+    <title>Contact - András</title>
+</head>
+<body style="display: none;" onload="document.body.style.display = 'block';">
+    <div class="transition" id="transition"></div>
+    <div class="contact-content" id="contact-content">
+        <div class="contact-main">
+            <h1 class="contact-title">Contact</h1>
+            <h3 class="contact-desc">Want a website?</h3>
+            <div class="links">
+                <div class="link" onclick="openPage('mailto:???', true)">E-Mail</div>
+                <div class="link" onclick="openPage('https://www.instagram.com/horstandr', true)">Instagram</div>
+                <div class="link" onclick="openPage('sms:+31630165932', true)">Message</div>
+                <div class="link" onclick="openPage('tel:+31630165932', true)">Call</div>
+            </div>
+        </div>
+        <div class="menu-btn" id="menu-button" onclick="document.getElementById('menu-button').classList.toggle('menu-checked');gsap.to('.menu', {duration:0.5, y:-2500, ease:'power2.inOut'});;">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="menu" style="top:2500px;">
+        <img class="menu-close" src="../img/menu-close.svg" onclick="document.getElementById('menu-button').classList.toggle('menu-checked');gsap.to('.menu', {duration: 0.5, y:2500, ease: 'power2.inOut'});">
+        <ul>
+            <li onclick="openPage('home.html', true)">Home</li>
+            <li onclick="openPage('about.html', true)">About</li>
+            <li onclick="openPage('contact.html', true)">Contact</li>
+            <li onclick="openPage('projects.html', true)">Projects</li>
+        </ul>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+<script src="js/gsap-contact.js"></script>
+<script src="../script/randomBg.js"></script>
+<script src="../script/openPage.js"></script>
+<script>randomBackground();</script>
+</html>

@@ -1,0 +1,53 @@
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: var(--secundary);
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+}
+
+.about-main {
+    margin-top:30px;
+    flex-direction: column;
+    height: max-content;
+    display: flex;
+    align-items: center;
+}
+
+.about-title {
+    text-align: center;
+    color: var(--primary);
+    font-size: 23vw;
+}
+
+.about-desc {
+    text-align: center;
+    font-size: 7vw;
+    color: var(--primary);
+}
+
+.menu-btn {
+    width: 60vw;
+    position: fixed;
+    bottom: 20px;
+}
+
+.about-contact-me {
+    color: var(--secundary);
+    font-size: 7vw;
+    padding: 20px;
+    width: calc(65vw - 40px);
+    margin-top: 20px;
+    background-color: var(--primary);
+    text-align: center;
+}

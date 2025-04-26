@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Nthng</title>
+    <link rel="stylesheet" href="style/menu.css">
+    <link rel="stylesheet" href="style/about.css">
+</head>
+<body style="display: none;" onload="document.body.style.display = 'block';">
+    <div class="transition" id="transition"></div>
+    <div class="about-content" id="about-content">
+        
+        <div class="about-title">
+            <h1 class="about-title-text">About</h1>
+        </div>
+        <div class="about-side-img">
+            <img src="../img/illus2.svg" alt="">
+        </div>
+        <div class="about-text">
+            <p class="about-desc">Websites made for you, your way. <br>
+                                    I am a website developer, 13 years of age, and I love to make modern and sleek websites. Like what you see?</p>
+            <button class="about-contact-me" onclick="openPage('contact.html', false)">Contact me</button>
+            <div class="awards-table"></div>
+        </div>
+        <div class="menu-btn" id="menu-button" onclick="gsap.to('.about-content', {duration:0.5, scale:0.8});document.getElementById('menu-button').classList.toggle('menu-checked');gsap.to('.menu', {duration:0.5, x:-1000, ease:'power2.inOut'});">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+        <div class="menu" style="right: -1000px;">
+            <img class="menu-close" src="../img/menu-close-brown.svg" onclick="gsap.to('.about-content', {duration:0.5, scale:1});gsap.to('.menu', {duration: 0.5, x:1000, ease: 'power2.inOut'});document.getElementById('menu-button').classList.toggle('menu-checked');">
+            <ul>
+                <li onclick="openPage('home.html', true)">Home</li>
+                <li onclick="openPage('about.html', false)">About</li>
+                <li onclick="openPage('contact.html', false)">Contact</li>
+                <li onclick="openPage('projects.html', false)">Projects</li>
+            </ul>
+        </div>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+<script src="js/gsap-about.js"></script>
+<script src="../script/randomBg.js"></script>
+<script src="../script/openPage.js"></script>
+<script>importBackground();</script>
+</html>

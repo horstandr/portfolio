@@ -1,0 +1,71 @@
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: var(--secundary);
+}
+
+.loader-screen {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.loader-screen * {
+    color: var(--primary);
+}
+
+.loader-desc-1, .loader-desc-2 {
+    font-size: 8vw;
+}
+
+.loader-title {
+    font-size: 23vw;
+}
+
+.title {
+    margin-top: 20px;
+}
+
+.title-text {
+    text-align: center;
+    color: var(--primary);
+    font-size: 23vw;
+}
+
+.title-desc {
+    text-align: center;
+    font-size: 8vw;
+    color: var(--primary);
+}
+
+.main {
+    margin-top:30px;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+}
+
+.illustration {
+    height: 25vw;
+    aspect-ratio: 1 / 1;
+}
