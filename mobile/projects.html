@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/menu.css">
+    <link rel="stylesheet" href="style/projects.css">
+    <title>Projects - András</title>
+</head>
+<body style="display: none;" onload="document.body.style.display = 'block'">
+    <div class="transition" id="transition"></div>
+    <div class="projects-content" id="projects-content">
+        <div class="projects-main">
+            <h1 class="projects-title">Projects</h1>
+            <h3 class="projects-desc">These are all my projects!</h3>
+            <div class="links">
+                <div onclick="window.open('https://www.dakkoffer-huren.nu/')" class="link">dakkoffer-huren.nu</div>
+                <div onclick="window.open('https://www.instagram.com/p/DDFMvxtseYp/')" class="link">Time Moves Slow</div>
+                <div onclick="window.open('https://www.instagram.com/p/DBHCO-zMW7k/')" class="link">IG Logo</div>
+                <div onclick="window.open('https://www.instagram.com/p/DBbk84OMshi/')" class="link">のよってここに</div>
+                <div onclick="window.open('https://www.instagram.com/p/DBYHxiksemw/')" class="link">Sapphire</div>
+                <div onclick="window.open('https://www.instagram.com/p/DBUPjJBswN3/')" class="link">Futurissimo</div>
+                <div onclick="window.open('https://www.instagram.com/p/DBO8LUToB4r/')" class="link">Pattern</div>
+                <div onclick="window.open('https://www.instagram.com/p/DBMPUFvoYCj/')" class="link">Het Ontbijt</div>
+            </div>
+        </div>
+        <div class="menu-btn" id="menu-button" onclick="document.getElementById('menu-button').classList.toggle('menu-checked');
+                                    gsap.to('.menu', {duration:0.5, y:-2500, ease:'power2.inOut'});;">
+            <p></p>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="menu" style="top:2500px;">
+        <img class="menu-close" src="../img/menu-close.svg" onclick="document.getElementById('menu-button').classList.toggle('menu-checked');gsap.to('.menu', {duration: 0.5, y:2500, ease: 'power2.inOut'});">
+        <ul>
+            <li onclick="openPage('home.html', true)">Home</li>
+            <li onclick="openPage('about.html', true)">About</li>
+            <li onclick="openPage('contact.html', true)">Contact</li>
+            <li onclick="openPage('projects.html', true)">Projects</li>
+        </ul>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+<script src="js/gsap-contact.js"></script>
+<script src="../script/randomBg.js"></script>
+<script src="../script/openPage.js"></script>
+<script>onPageLoad();</script>
+</html>

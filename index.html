@@ -3,10 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; url=desktop/home.html">
     <title>Portfolio</title>
 </head>
 <body>
-    <h1>Portfolio is <a href="desktop/home.html">here</a>...</h1>
+    <h1>Mobile: <a href="mobile/home.html">here</a></h1>
+    <h1>Desktop: <a href="desktop/home.html">here</a></h1>
 </body>
+<script>
+    if (screen.width <= 700) {
+        window.location = "mobile/home.html";
+    } else {
+        window.location = 'desktop/home.html';
+    }
+</script>
 </html>

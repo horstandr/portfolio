@@ -11,12 +11,11 @@
     <div class="contact-content" id="contact-content">
         <div class="contact-main">
             <h1 class="contact-title">Contact</h1>
-            <h3 class="contact-desc">Want a website?</h3>
+            <h3 class="contact-desc">You can reach me here:</h3>
             <div class="links">
-                <div class="link" onclick="openPage('mailto:???', true)">E-Mail</div>
-                <div class="link" onclick="openPage('https://www.instagram.com/horstandr', true)">Instagram</div>
-                <div class="link" onclick="openPage('sms:+31630165932', true)">Message</div>
-                <div class="link" onclick="openPage('tel:+31630165932', true)">Call</div>
+                <div class="link" onclick="window.open('mailto:???', true)">E-Mail</div>
+                <div class="link" onclick="window.open('https://www.instagram.com/horstandr', true)">Instagram</div>
+                <div class="link" onclick="window.open('https://www.github.com/horstandr')">GitHub</div>
             </div>
         </div>
         <div class="menu-btn" id="menu-button" onclick="document.getElementById('menu-button').classList.toggle('menu-checked');gsap.to('.menu', {duration:0.5, y:-2500, ease:'power2.inOut'});;">

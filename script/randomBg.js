@@ -20,10 +20,6 @@ function onPageLoad() {
         r.style.setProperty('--primary', localStorage.getItem('bgcolor'));
         r.style.setProperty('--secundary', localStorage.getItem('secundary-color'));
     }
-    
-    if (screen.width <= 700) {
-        window.location = "mobile/home.html";
-    }
 }
 
 function importBackground() {

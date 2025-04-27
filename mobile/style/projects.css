@@ -1,0 +1,42 @@
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: var(--primary);
+}
+
+body {
+    background-color: var(--secundary);
+    height: 100vh;
+    width: 100vw;
+    overflow-y: scroll;
+}
+
+.projects-main {
+    margin-bottom: 50vh;
+}
+
+.projects-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-title {
+    margin-top: 30px;
+    font-size: 23vw;
+}
+
+.projects-desc {
+    font-size: 7vw;
+    margin-bottom: 30px;
+}
+
+.link {
+    border: 3px solid var(--primary);
+    padding: 100px 0px;
+    margin-bottom: 20px;
+    font-size: 7vw;
+}
