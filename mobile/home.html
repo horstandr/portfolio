@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>András</title>
+    <link rel="stylesheet" href="style/menu.css">
+    <link rel="stylesheet" href="style/home.css">
+</head>
+<body style="display: none;" onload="document.body.style.display = 'block';">
+    <div class="loader-screen" id="loader-screen">
+        <h1 class="loader-desc-1">Web</h1>
+        <h1 class="loader-title">András</h1>
+        <h1 class="loader-desc-2">Design</h1>
+    </div>
+    <div class="transition" id="transition"></div>
+    <div class="content" id="content">
+        <div class="title">
+            <h1 class="title-text">András</h1>
+            <h3 class="title-desc">web design</h3>
+        </div>
+        <div class="main">
+            <svg class="illustration" viewBox="0 0 290 290" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M290 72.5C249.959 72.5 217.5 40.0406 217.5 0H72.5C72.5 40.0406 40.0406 72.5 0 72.5V290H72.5C72.5 249.959 104.959 217.5 145 217.5C104.959 217.5 72.5 185.041 72.5 145C72.5 104.959 104.959 72.5 145 72.5C185.041 72.5 217.5 104.959 217.5 145C217.5 185.041 185.041 217.5 145 217.5C185.041 217.5 217.5 249.959 217.5 290H290V72.5Z" fill="var(--primary)"/>
+                <path d="M145 217.5C185.041 217.5 217.5 185.041 217.5 145C217.5 104.959 185.041 72.5 145 72.5C104.959 72.5 72.5 104.959 72.5 145C72.5 185.041 104.959 217.5 145 217.5Z" fill="none"/>
+                <path d="M145 217.5C104.959 217.5 72.5 249.959 72.5 290H217.5C217.5 249.959 185.041 217.5 145 217.5Z" fill="none"/>
+                <path d="M217.5 0C217.5 40.0406 249.959 72.5 290 72.5V0H217.5Z" fill="none"/>
+                <path d="M0 72.5C40.0406 72.5 72.5 40.0406 72.5 0H0V72.5Z" fill="none"/>
+            </svg>            
+        </div>
+        <div class="menu-btn" id="menu-button" onclick="document.getElementById('menu-button').classList.toggle('menu-checked');gsap.to('.menu', {duration:0.5, y:-2500, ease:'power2.inOut'});;">
+            <p>MENU</p>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="menu" style="top:2500px;">
+        <img class="menu-close" src="../img/menu-close.svg" onclick="document.getElementById('content').style.scale = 1;document.getElementById('menu-button').classList.toggle('menu-checked');gsap.to('.menu', {duration: 0.5, y:2500, ease: 'power2.inOut'});">
+        <ul>
+            <li onclick="openPage('home.html', true)">Home</li>
+            <li onclick="openPage('about.html', true)">About</li>
+            <li onclick="openPage('contact.html', true)">Contact</li>
+            <li onclick="openPage('projects.html', true)">Projects</li>
+        </ul>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+<script src="js/gsap-home.js"></script>
+<script src="../script/randomBg.js"></script>
+<script src="../script/openPage.js"></script>
+<script>onPageLoad();</script>
+</html>

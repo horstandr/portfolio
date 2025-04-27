@@ -1,0 +1,116 @@
+body {
+    background-color: var(--primary);
+}
+
+* {
+    font-family: "Josefin Sans", serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.contact-title-text {
+    font-size: 35vh;
+    font-weight: 300;
+    margin: 50px;
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 3vw;
+    margin-left: 50px;
+}
+
+.desc > a {
+    text-decoration:dashed;
+    transition: all 0.2s ease;
+}
+
+.desc > a:hover {
+    background-color: var(--secundary);
+    color: var(--primary);
+}
+
+.menu-btn {
+    position: fixed;
+    background-color: var(--primary);
+    right: 50px;
+    top:50px;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    transition: all 0.2s ease;
+}
+
+.menu-btn:hover {
+    background-color: var(--secundary);
+}
+
+.menu-btn > span {
+    width: 3vh;
+    height: 5vw;
+    margin-bottom: 1vh;
+}
+
+.menu-btn:hover > span {
+    background-color: var(--primary);
+}
+
+.menu-checked span:nth-child(2) {
+    scale: 0.8;
+}
+
+.about-content {
+    transition: all 0.5 ease;
+}
+
+.menu {
+    background-color: var(--secundary);
+}
+
+.menu * {
+    color: var(--primary);
+}
+
+.menu > ul > li {
+    text-align: center;
+    transition: all 0.2s ease;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.menu > ul > li:hover {
+    cursor: pointer;
+    background-color: var(--primary);
+    color: var(--secundary);
+}
+
+.contact-side-img {
+    top: 41vh;
+    right: 25vh;
+    position: fixed;
+}
+
+.contact-side-img > img {
+    width: 45vh;
+    aspect-ratio: 1 /1 ;
+    animation: contact-side-img-turn 12s linear infinite;
+}
+
+@media only screen and (max-height: 750px) {
+    .contact-side-img > img {
+        width: 60vh;
+    }
+    .contact-side-img {
+        top: 25vh;
+        right: 20vw;
+    }
+}
+
+
+
+@keyframes contact-side-img-turn {
+    0%{transform: rotate(0deg);}
+    100% {transform: rotate(-360deg);}
+}

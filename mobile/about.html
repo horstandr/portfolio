@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link rel="stylesheet" href="style/menu.css">
+    <link rel="stylesheet" href="style/about.css">
+</head>
+<body style="display: none;" onload="document.body.style.display = 'block';">
+    <div class="transition" id="transition"></div>
+    <div class="about-content" id="about-content">
+        <div class="about-main">
+            <h1 class="about-title">About</h1>
+            <h3 class="about-desc">I am a website developer, 14 years of age, and I love to make modern and sleek websites. 
+            Since a young age, I had love for programming. But since a year or two, I am learning something about myself: I like design too! So, if you want a website, just like this one, simple and beautiful:
+            </h3>
+            <div onclick="openPage('contact.html', true);"
+            class="about-contact-me">Contact me!</div>
+        </div>
+        <div class="menu-btn" id="menu-button" onclick="document.getElementById('menu-button').classList.toggle('menu-checked');gsap.to('.menu', {duration:0.5, y:-2500, ease:'power2.inOut'});;">
+            <p></p>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="menu" style="top:2500px;">
+        <img class="menu-close" src="../img/menu-close.svg" onclick="document.getElementById('menu-button').classList.toggle('menu-checked');gsap.to('.menu', {duration: 0.5, y:2500, ease: 'power2.inOut'});">
+        <ul>
+            <li onclick="openPage('home.html', true)">Home</li>
+            <li onclick="openPage('about.html', true)">About</li>
+            <li onclick="openPage('contact.html', true)">Contact</li>
+            <li onclick="openPage('projects.html', true)">Projects</li>
+        </ul>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+<script src="js/gsap-about.js"></script>
+<script src="../script/randomBg.js"></script>
+<script src="../script/openPage.js"></script>
+<script>onPageLoad();</script>
+</html>

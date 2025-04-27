@@ -1,0 +1,117 @@
+body {
+    background-color: var(--primary);
+    overflow: visible;
+}
+
+* {
+    color: white;
+    font-weight: 300;
+}
+
+* {
+    font-family: "Josefin Sans", serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+.about-title-text {
+    margin: 50px;
+    margin-bottom: 0;
+    font-size: 20vw;
+    font-weight: 300;
+}
+
+.about-desc {
+    font-size: 40pt;
+    margin-left: 50px;
+    width: 50vw;
+}
+
+.about-side-img {
+    position: fixed;
+    right: 9vw;
+    top: 28vh;
+}
+
+.about-side-img img {
+    width: 55vh;
+    aspect-ratio: 1 / 1;
+    animation: about-side-img-turn 20s linear infinite;
+}
+
+@keyframes about-side-img-turn {
+    0% {rotate: 0deg;}
+    100% {rotate: 360deg;}
+}
+
+.about-contact-me {
+    background-color: transparent;
+    border: 5px solid white;
+    font-size: 30pt;
+    margin: 50px;
+    padding: 10px;
+    transition: all 0.2s ease;
+}
+
+.about-contact-me:hover {
+    cursor: pointer;
+    background-color: white;
+    padding: 15px;
+    color: var(--primary);
+    scale: 1.2;
+}
+
+.menu-btn {
+    position: fixed;
+    background-color: var(--primary);
+    right: -500px;
+    top:50px;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    transition: all 0.2s ease;
+}
+
+.menu-btn:hover {
+    background-color: white;
+}
+
+.menu-btn > span {
+    width: 3vh;
+    height: 5vw;
+    margin-bottom: 1vh;
+}
+
+.menu-btn:hover > span {
+    background-color: var(--primary);
+}
+
+.menu-checked span:nth-child(2) {
+    scale: 0.8;
+}
+
+.about-content {
+    transition: all 0.5 ease;
+}
+
+.menu {
+    background-color: var(--secundary);
+}
+
+.menu * {
+    color: var(--primary);
+}
+
+.menu > ul > li {
+    text-align: center;
+    transition: all 0.2s ease;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.menu > ul > li:hover {
+    cursor: pointer;
+    background-color: var(--primary);
+    color: var(--secundary);
+}

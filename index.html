@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>András</title>
+    <title>Portfolio</title>
 </head>
 <body>
-    <h1>Site coming soon...</h1>
-    <h2>András</h2>
+    <h1>Mobile: <a href="mobile/home.html">here</a></h1>
+    <h2>Desktop: <a href="desktop/home.html">here</a></h2>
 </body>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
@@ -47,4 +47,12 @@
         }
     }
 </style>
+<script>
+    alert(window.screen.width);
+    if (window.screen.width <= 700) {
+        window.location = "mobile/home.html";
+    } else {
+        window.location = 'desktop/home.html';
+    }
+</script>
 </html>
