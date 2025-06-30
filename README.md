@@ -1,3 +1,1 @@
-# :portfolio
-This is my portfolio.
-[View here...](horstandr.github.io/portfolio)
+# horstandr:[portfolio](http://horstandr.github.io/portfolio)
